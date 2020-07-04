@@ -1,14 +1,12 @@
 <form name="myform">
-<textarea name="inputtext"></textarea>
-<!--<input type="button" value="Add New Text" onClick="addtext();">-->
 <textarea name="outputtext"></textarea>
-
+<!-- don't use table, br, button -->
 
 <input type="button" onClick="addCharacter1();" value="𐐀">
 <input type="button" onClick="addCharacter2();" value="𐐁">
-<button type="button">𐐂</button>
-<button type="button">𐐃</button>
-<button type="button">𐐄</button>
+<input type="button" onClick="addCharacter3();" value="𐐂">
+<input type="button" onClick="addCharacter4();" value="𐐃">
+<input type="button" onClick="addCharacter5();" value="𐐄">
 <button type="button">𐐅</button>
 <button type="button">𐐆</button>
 <button type="button">𐐇</button>
@@ -64,6 +62,38 @@ function addCharacter1(){
 }
     
 function addCharacter2(){
+    document.myform.outputtext.value += "𐐁";
+}
+    
+function addCharacter3(){
+    document.myform.outputtext.value += "𐐂";
+}
+    
+function addCharacter4(){
+    document.myform.outputtext.value += "𐐃";
+}
+    
+function addCharacter5(){
+    document.myform.outputtext.value += "𐐄";
+}
+    
+function addCharacter6(){
+    document.myform.outputtext.value += "𐐅";
+}
+    
+function addCharacter7(){
+    document.myform.outputtext.value += "𐐁";
+}
+    
+function addCharacter8(){
+    document.myform.outputtext.value += "𐐁";
+}
+    
+function addCharacter9(){
+    document.myform.outputtext.value += "𐐁";
+}
+    
+function addCharacter10(){
     document.myform.outputtext.value += "𐐁";
 }
 </script>
