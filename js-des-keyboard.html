@@ -1,11 +1,11 @@
 <form name="myform">
 <textarea name="inputtext"></textarea>
-<input type="button" value="Add New Text" onClick="addtext();">
+<!--<input type="button" value="Add New Text" onClick="addtext();">-->
 <textarea name="outputtext"></textarea>
 
 
-<input type="button" onClick="addtext();">𐐀</button>
-<button type="button">𐐁</button>
+<input type="button" onClick="addCharacter1();" value="𐐀">
+<input type="button" onClick="addCharacter2();" value="𐐁">
 <button type="button">𐐂</button>
 <button type="button">𐐃</button>
 <button type="button">𐐄</button>
@@ -49,8 +49,22 @@
 
 <script language="javascript" type="text/javascript">
 function addtext() {
-	var newtext = document.myform.outputtext.value;
+	//var newtext = document.myform.outputtext.value;
 	document.myform.outputtext.value += "characterhere";
+}
+
+/*function addCharacter(var ch){
+    var newtext = document.myform.outputtext.value;
+    document.myform.outputtext.value += ch;
+}*/
+    
+function addCharacter1(){
+   // var newtext = document.myform.outputtext.value;
+    document.myform.outputtext.value += "𐐀";
+}
+    
+function addCharacter2(){
+    document.myform.outputtext.value += "𐐁";
 }
 </script>
 
